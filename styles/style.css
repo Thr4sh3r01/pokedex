@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@font-face {
+  font-family: pokemon;
+  src: url(../../Fonts/Pokemon\ Hollow.ttf);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+body {
+  background-image: url(../../Assets/background.png);
+  background-size: cover; /* Cubre todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  background-attachment: fixed; /* Fija la imagen de fondo al desplazarse */
+  background: linear-gradient(rgba(17, 16, 16, 0.5), rgba(20, 17, 17, 0.5)), url("../../Assets/background.jpg");
+}
+
+/* color rojo principal: #f86053 */
+header {
+  font-family: pokemon;
+  background-color: #18181b;
+  padding: 5px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  border-radius: 100px;
+}
+header .chevron-down {
+  width: 5px;
+}
+header .logo {
+  width: 100px;
+}
+header .logo, header .menu {
+  display: flex;
+  align-items: center;
+}
+header .menu nav {
+  display: flex;
+  justify-content: center;
+}
+header .menu nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+  transition: font-size 0.3s ease;
+}
+header a:hover {
+  font-size: 17px;
+}
+header .menu nav .new-link {
+  display: none; /* Ocultar enlaces de hamburguesa */
+}
+header .prueba {
+  display: flex;
+}
+header .prueba a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+}
+header .menu-toggle {
+  display: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1100px) {
+  header .menu {
+    display: none;
+  }
+  header .prueba {
+    display: none; /* Ocultar div prueba */
+  }
+  header .menu-toggle {
+    display: block;
+    float: right;
+  }
+  header .menu-open .menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #18181b;
+  }
+  header .menu-open .menu nav a {
+    margin: 10px;
+    display: block; /* Mostrar nuevos enlaces */
+  }
+}
+
+footer {
+  font-family: pokemon;
+  display: flex;
+  color: black;
+}/*# sourceMappingURL=style.css.map */
