@@ -1,5 +1,5 @@
 header {
-  font-family: pokemon;
+  font-family: pokemon8bits;
   background-color: #312524b2;
   padding: 0px;
   height: 40px;
@@ -9,16 +9,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 12px;
   border-radius: 100px;
   ;
 
-  .chevron-down {
-    width: 5px;
-  }
-
   .logo {
-    width: 100px;
+    width: 150px;
   }
 
   .logo,
@@ -41,7 +37,7 @@ header {
   }
 
   a:hover {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .menu nav .new-link {

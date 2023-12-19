@@ -3,6 +3,10 @@
   font-family: pokemon;
   src: url(../../Fonts/Pokemon\ Hollow.ttf);
 }
+@font-face {
+  font-family: pokemon8bits;
+  src: url(../../Fonts/Pokemon\ GB.ttf);
+}
 * {
   margin: 2px;
   padding: 0px;
@@ -10,18 +14,17 @@
 }
 
 body {
-  background-image: url(../../Assets/background.png);
+  background-image: url(../../Assets/fondo-web.jpg);
   background-size: cover; /* Cubre todo el fondo */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita la repetición de la imagen */
   background-attachment: fixed; /* Fija la imagen de fondo al desplazarse */
-  background: linear-gradient(rgba(17, 16, 16, 0.5), rgba(20, 17, 17, 0.5)), url("../../Assets/background.png");
 }
 
 /* color rojo principal: #f86053 */
 /* color negro: #18181b; */
 header {
-  font-family: pokemon;
+  font-family: pokemon8bits;
   background-color: rgba(49, 37, 36, 0.6980392157);
   padding: 0px;
   height: 40px;
@@ -31,14 +34,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 12px;
   border-radius: 100px;
 }
-header .chevron-down {
-  width: 5px;
-}
 header .logo {
-  width: 100px;
+  width: 150px;
 }
 header .logo,
 header .menu {
@@ -57,7 +57,7 @@ header .menu nav a {
   transition: font-size 0.3s ease;
 }
 header a:hover {
-  font-size: 17px;
+  font-size: 15px;
 }
 header .menu nav .new-link {
   display: none; /* Ocultar enlaces de hamburguesa */
@@ -103,10 +103,23 @@ header .menu-toggle {
   }
 }
 
-main .textaco-pokemaniaco {
+main {
+  width: 100vh;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  align-items: flex-start;
+}
+
+.textaco-pokemaniaco {
   width: 600px;
   height: 100px;
-  align-items: center;
+}
+
+.pokedex {
+  width: 50%;
 }
 
 footer {

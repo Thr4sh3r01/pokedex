@@ -1,9 +1,18 @@
 main {
-    .textaco-pokemaniaco {
-        width: 600px;
-        height: 100px;
-        align-items: center;
-        
-    }
+  width: 100vh;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  align-items: flex-start;
+}
 
+.textaco-pokemaniaco {
+  width: 600px;
+  height: 100px;
+}
+
+.pokedex {
+  width: 50%;
 }
