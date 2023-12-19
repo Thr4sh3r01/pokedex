@@ -1,83 +1,85 @@
 header {
-    font-family: pokemon;
-    background-color: #18181b;
-    padding: 5px;
-    color: white;
-    text-decoration: none;
-    text-align: center;
+  font-family: pokemon;
+  background-color: #312524b2;
+  padding: 0px;
+  height: 40px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  border-radius: 100px;
+  ;
+
+  .chevron-down {
+    width: 5px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .logo,
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu nav {
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    border-radius: 100px;
-    
+  }
 
-    .chevron-down {
-      width: 5px;
-    }
+  .menu nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    transition: font-size 0.3s ease;
+  }
 
-    .logo {
-      width: 100px;
-    }
+  a:hover {
+    font-size: 17px;
+  }
 
-    .logo, .menu, {
-        display: flex;
-        align-items: center;
-      }
-      
-      .menu nav {
-        display: flex;
-        justify-content: center;
-      }
-      
-      .menu nav a {
-        color: white;
-        text-decoration: none;
-        padding: 10px;
-        margin: 0 10px;
-        transition: font-size 0.3s ease;
-      }
-      
-      a:hover {
-        font-size: 17px;
-      }
-      
-      .menu nav .new-link {
-        display: none; /* Ocultar enlaces de hamburguesa */
-      }
-      
-      .prueba {
-        display: flex;
-      }
-      
-      .prueba a {
-        color: white;
-        text-decoration: none;
-        padding: 10px;
-        margin: 0 10px;
-      }
-      
-      .menu-toggle {
-        display: none;
-        font-size: 20px;
-        color: white;
-        cursor: pointer;
-      }
+  .menu nav .new-link {
+    display: none; /* Ocultar enlaces de hamburguesa */
+  }
 
-    @media only screen and (max-width: 1100px) {
+  .prueba {
+    display: flex;
+  }
+
+  .prueba a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+  }
+
+  .menu-toggle {
+    display: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 1100px) {
     .menu {
       display: none;
     }
-  
+
     .prueba {
       display: none; /* Ocultar div prueba */
     }
-  
+
     .menu-toggle {
       display: block;
       float: right;
     }
-  
+
     .menu-open .menu {
       display: flex;
       flex-direction: column;
@@ -85,18 +87,11 @@ header {
       top: 60px;
       left: 0;
       right: 0;
-      background-color: #18181b;
+      background-color: #f86053;
     }
-  
     .menu-open .menu nav a {
       margin: 10px;
       display: block; /* Mostrar nuevos enlaces */
     }
-    }
+  }
 }
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 * {
-  margin: 0px;
+  margin: 2px;
   padding: 0px;
-  border: 0px;
+  border: 8px;
 }
 
 body {
@@ -10,8 +10,10 @@ body {
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita la repetición de la imagen */
   background-attachment: fixed; /* Fija la imagen de fondo al desplazarse */
-  background: linear-gradient(rgba(17, 16, 16, 0.5), rgba(20, 17, 17, 0.5)), url('../../Assets/background.jpg');
+  background: linear-gradient(rgba(17, 16, 16, 0.5), rgba(20, 17, 17, 0.5)), url('../../Assets/background.png'); 
+
 }
 
-
 /* color rojo principal: #f86053 */
+
+/* color negro: #18181b; */

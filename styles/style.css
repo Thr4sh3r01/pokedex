@@ -4,9 +4,9 @@
   src: url(../../Fonts/Pokemon\ Hollow.ttf);
 }
 * {
-  margin: 0px;
+  margin: 2px;
   padding: 0px;
-  border: 0px;
+  border: 8px;
 }
 
 body {
@@ -15,14 +15,16 @@ body {
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita la repetición de la imagen */
   background-attachment: fixed; /* Fija la imagen de fondo al desplazarse */
-  background: linear-gradient(rgba(17, 16, 16, 0.5), rgba(20, 17, 17, 0.5)), url("../../Assets/background.jpg");
+  background: linear-gradient(rgba(17, 16, 16, 0.5), rgba(20, 17, 17, 0.5)), url("../../Assets/background.png");
 }
 
 /* color rojo principal: #f86053 */
+/* color negro: #18181b; */
 header {
   font-family: pokemon;
-  background-color: #18181b;
-  padding: 5px;
+  background-color: rgba(49, 37, 36, 0.6980392157);
+  padding: 0px;
+  height: 40px;
   color: white;
   text-decoration: none;
   text-align: center;
@@ -38,7 +40,8 @@ header .chevron-down {
 header .logo {
   width: 100px;
 }
-header .logo, header .menu {
+header .logo,
+header .menu {
   display: flex;
   align-items: center;
 }
@@ -92,7 +95,7 @@ header .menu-toggle {
     top: 60px;
     left: 0;
     right: 0;
-    background-color: #18181b;
+    background-color: #f86053;
   }
   header .menu-open .menu nav a {
     margin: 10px;
@@ -100,8 +103,12 @@ header .menu-toggle {
   }
 }
 
+main .textaco-pokemaniaco {
+  width: 600px;
+  height: 100px;
+  align-items: center;
+}
+
 footer {
-  font-family: pokemon;
-  display: flex;
-  color: black;
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */
