@@ -36,11 +36,12 @@ header {
   align-items: center;
   font-size: 12px;
   border-radius: 100px;
+  position: sticky;
 }
 header .logo {
   width: 150px;
+  float: left;
 }
-header .logo,
 header .menu {
   display: flex;
   align-items: center;
@@ -107,10 +108,14 @@ main {
   width: 100vh;
   padding: 0px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   align-content: stretch;
   align-items: flex-start;
+}
+main .main-centro {
+  width: 100vh;
+  height: 100vh;
 }
 
 .textaco-pokemaniaco {
@@ -119,7 +124,8 @@ main {
 }
 
 .pokedex {
-  width: 50%;
+  width: 30%;
+  position: absolute;
 }
 
 footer {

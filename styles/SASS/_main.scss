@@ -2,10 +2,16 @@ main {
   width: 100vh;
   padding: 0px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   align-content: stretch;
   align-items: flex-start;
+  .main-centro {
+      width: 100vh;
+      height: 100vh;
+
+  
+  }
 }
 
 .textaco-pokemaniaco {
@@ -14,5 +20,6 @@ main {
 }
 
 .pokedex {
-  width: 50%;
+  width: 30%;
+  position: absolute;
 }

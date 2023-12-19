@@ -11,13 +11,14 @@ header {
   align-items: center;
   font-size: 12px;
   border-radius: 100px;
+  position: sticky;
   ;
 
   .logo {
     width: 150px;
+    float: left;
   }
 
-  .logo,
   .menu {
     display: flex;
     align-items: center;
