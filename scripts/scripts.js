@@ -1,7 +1,7 @@
 const URL = 'https://pokeapi.co/api/v2/pokemon/';
 
 const searchInput = document.getElementById('search');
-const pokedexScreen = document.getElementById('Screen');
+const pokedexScreen = document.getElementById('screen');
 
 // Función para mostrar un mensaje de error
 function showError(message) {
