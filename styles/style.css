@@ -114,8 +114,8 @@ main {
   align-items: flex-start;
 }
 main .main-centro {
-  width: 100vh;
-  height: 100vh;
+  min-height: 100%;
+  height: 100%;
 }
 
 .textaco-pokemaniaco {
