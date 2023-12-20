@@ -11,6 +11,8 @@
   margin: 2px;
   padding: 0px;
   border: 8px;
+  box-sizing: border-box;
+  font-family: pokemon8bits;
 }
 
 body {
@@ -117,15 +119,20 @@ main .main-centro {
   min-height: 100%;
   height: 100%;
 }
-
-.textaco-pokemaniaco {
+main .textaco-pokemaniaco {
   width: 600px;
   height: 100px;
 }
-
-.pokedex {
+main .pokedex {
   width: 30%;
   position: absolute;
+}
+main .elementos-busqueda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+  gap: 0.5em;
 }
 
 footer {
