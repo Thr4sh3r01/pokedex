@@ -9,6 +9,7 @@ main {
   .main-centro {
       min-height: 100%;
       height: 100%;
+      position: relative;
   }
 
   .textaco-pokemaniaco {
@@ -17,25 +18,30 @@ main {
   }
   
   .pokedex {
-    width: 30%;
+      width: 70%;
     position: absolute;
   }
 
   .elementos-busqueda {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1em;
-    gap: 0.5em;
-    padding: 0.5em 1em;
-    font-size: 1em;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 0.25em;
-    cursor: pointer;
-    background-color: #656161;    
-    
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #656161;   
+      margin-top: 80px;
+      gap: 0.5em;
+      padding: 0.5em 1em;
+      font-size: 1em;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 0.25em;
+      cursor: pointer;
+      background-color: #656161;      
+       
   
 }
 
@@ -51,6 +57,14 @@ main {
         
     
     }
+
+    .infopokemon {
+      margin-top: 280px;
+      margin-left: 990px;
+      position: absolute;
+      font-size: 8px;
+    }
+
 
 }
 
